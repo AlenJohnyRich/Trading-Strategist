@@ -1,0 +1,19 @@
+# Ray cluster example for GPU autoscaling (minimal)
+cluster_name: tradingai-cluster
+
+# Head node
+head_node:
+  InstanceType: gpu.medium
+  ImageId: ami-xxxxxx
+  # ... provider-specific config
+
+# Worker nodes
+worker_nodes:
+  InstanceType: gpu.large
+  ImageId: ami-xxxxxx
+  MinWorkers: 0
+  MaxWorkers: 10
+
+# Example resources
+docker:
+  image: yourregistry/tradingai:latest
