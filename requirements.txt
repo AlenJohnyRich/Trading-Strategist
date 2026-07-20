@@ -1,5 +1,5 @@
-sentence-transformers
-pymupdf
-pytesseract
-chromadb
-faiss-cpu
+transformers
+datasets
+torch
+accelerate
+gym
