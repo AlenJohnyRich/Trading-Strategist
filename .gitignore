@@ -1,0 +1,7 @@
+# Basic .gitignore
+__pycache__/
+*.pyc
+.env
+venv/
+.ipynb_checkpoints/
+memory_store.json
